@@ -10,3 +10,15 @@ const yearOfBirth = 2019 - age;
 return `I was born in ${yearOfBirth}.`;
 
 }
+
+function yearOfBirth(age){
+if (age < 0) {
+    throw new Error("Age cannot be negative");
+}
+try {
+    const greeting1 = createGreeting('Bob', '35');
+    console.log(greeting1);
+}
+    catch (e){
+    console.error(e.message); 
+}
