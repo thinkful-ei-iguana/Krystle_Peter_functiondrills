@@ -51,3 +51,37 @@ function decode(word){
 // else { return ' ';}
 
 // decode ('craft', 'block' , 'argon', 'meter', 'bellls', 'brwon', 'croon', 'droop');
+
+function howManyDays('month', leapYear){
+    let numOfDays;
+    switch(month){
+        case 'september' :
+        case 'april' :
+        case 'june' :
+        case 'november':
+        numOfDays = 30;
+        break;
+
+        case 'january' :
+        case 'march' :
+        case 'may' :
+        case 'july' :
+        case 'august' :
+        case 'october' :
+        case 'december' :
+        numOfDays = 31;
+        break;
+
+        case 'february' :
+            if (leapYear === true) {
+            result = `February has 29 days`;
+            }
+            if (leapYear === false) {
+                result = `February has 28 days`;
+                }
+    }
+    default:
+        throw new Error('Must provide a valid month');
+    }
+    return `${month} has ${numOfDays} days.`;
+}
