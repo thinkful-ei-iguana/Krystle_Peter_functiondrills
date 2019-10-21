@@ -84,4 +84,36 @@ function howManyDays('month', leapYear){
         throw new Error('Must provide a valid month');
     }
     return `${month} has ${numOfDays} days.`;
+
 }
+
+function rockPaperScissors(myNum, computerNum){
+
+    const myNum = Math.floor(Math.random() * 3) + 1;
+    const computerNum = Math.floor(Math.random() * 3) + 1;
+
+    if (myNum === 1 && computerNum === 2){
+        return `Rock beats scissors`;
+    }
+    if (myNum === 2 && computerNum === 1){
+        return `Paper beats rock`;
+    }  
+    if (myNum === 2 && computerNum === 3){
+        return `Scissors beats paper`;
+    }
+    if (myNum === 3 && computerNum === 1){
+        return `Rock beats scissors`;
+    }
+    if (myNum === 3 && computerNum === 2){
+        return `Scissors beats paper`;
+    }
+    if (myNum === computerNum){
+        return `Tie`;
+    }
+    if (myNum > 3 || myNum <1) || (computerNum > 3 || computerNum <1)
+    throw new Error ('Error');
+    }
+    
+    
+
+    }
