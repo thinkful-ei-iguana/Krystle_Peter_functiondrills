@@ -18,3 +18,36 @@ function beyond(num){
         console.log('Staying home');
     }
 }
+
+function decode(word){
+    function decode(word) {
+        switch(word[0]) {
+        case 'a':
+          return word[1];
+        case 'b':
+          return word[2];
+        case 'c':
+          return word[3];
+        case 'd':
+          return word[4];
+        default:
+          return ' ';
+        }
+      }
+// let message = word.split('');
+
+// if (message[0] === 'a'){
+//     return word[1];
+// }
+// if (message[0] === 'b'){
+//     return word[2];
+// }
+// if (message[0] === 'c'){
+//     return word[3];
+// }
+// if (message[0] === 'd'){
+//     return word[4];
+// }
+// else { return ' ';}
+
+// decode ('craft', 'block' , 'argon', 'meter', 'bellls', 'brwon', 'croon', 'droop');
